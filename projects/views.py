@@ -7,7 +7,7 @@ from django.views import generic
 from .models import Project
 
 class ProjectView(generic.ListView):
-    template_name = 'index.html'
+    template_name = 'projects.html'
     context_object_name = 'item_list'
 
     def get_queryset(self):

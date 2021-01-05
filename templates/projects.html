@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	
+	<head>
+		<title>My Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<base href="/">
+		<link type="text/css" href="{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		{% include "navigation.html" %}
+
+		{% include "header.html" %}
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Items -->
+					<section class="main items">
+						{% if item_list %}
+							{% for item in item_list %} 
+								<article class="item">
+									<header>
+										<a href="{% url 'projectdetail' item.id %}"><img src="{% static 'images/beach.jpg' %}" alt="" /></a>
+										<h3>{{item.projects_name}}</h3>
+									</header>
+									<p>{{item.projects_header}}</p>
+									<ul class="actions">
+										<li><a href="{% url 'projectdetail' item.id %}" class="button">Learn More</a></li>
+									</ul>
+								</article>
+							{% endfor %}
+						{% else %}
+							<p></p>
+						{% endif %}
+					</section>
+
+				<!-- Footer -->
+				{% include "footer.html" %}
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>

@@ -22,25 +22,13 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Items -->
-					<section class="main items">
-						{% if item_list %}
-							{% for item in item_list %} 
-								<article class="item">
-									<header>
-										<a href="{% url 'projectdetail' item.id %}"><img src="{% static 'images/beach.jpg' %}" alt="" /></a>
-										<h3>{{item.projects_name}}</h3>
-									</header>
-									<p>{{item.projects_header}}</p>
-									<ul class="actions">
-										<li><a href="{% url 'projectdetail' item.id %}" class="button">Learn More</a></li>
-									</ul>
-								</article>
-							{% endfor %}
-						{% else %}
-							<p></p>
-						{% endif %}
-					</section>
+				<section id="main" class="main">
+					<header>
+						<h2>I'm Robert.</h2>
+						<h3>I'm Robert.</h3>
+					</header>
+					<p>I'm a business analyst that majored in finance with a keen interest for programming.</p>
+				</section>
 
 				<!-- Footer -->
 				{% include "footer.html" %}
