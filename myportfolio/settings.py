@@ -25,8 +25,9 @@ SECRET_KEY = '#&d#im9^=*sz-tx8jcfg59zf=$j7h)mnse@n6_#2it!%i$&llf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = ['robertmarineauwebsite.azurewebsites.net']
+
+SCM_DO_BUILD_DURING_DEPLOYMENT = 1
 
 
 # Application definition
@@ -121,6 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-##STATIC_ROOT = path.join(BASE_DIR, 'static').replace('\\', '//')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
-##STATICFILES_DIRS = []
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"), 
+]
