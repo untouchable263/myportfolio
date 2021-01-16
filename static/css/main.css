@@ -1,13 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -48,7 +41,6 @@
 		-webkit-text-size-adjust: none;
 	}
 
-/* Box Model */
 
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
@@ -56,7 +48,6 @@
 		box-sizing: border-box;
 	}
 
-/* Basic */
 
 	@-ms-viewport {
 		width: device-width;
@@ -89,7 +80,6 @@
 			transition: none !important;
 		}
 
-/* Type */
 
 	body {
 		background-color: #f4f4f4;
@@ -301,7 +291,7 @@
 		border-bottom-color: #666666;
 	}
 
-/* Box */
+
 
 	.box {
 		border-radius: 4px;
@@ -326,7 +316,7 @@
 		border-color: #666666;
 	}
 
-/* Button */
+
 
 	input[type="submit"],
 	input[type="reset"],
@@ -449,7 +439,6 @@
 			color: #999999;
 		}
 
-/* Form */
 
 	form {
 		margin: 0 0 2em 0;
@@ -687,7 +676,7 @@
 		color: #999999 !important;
 	}
 
-/* Icon */
+
 
 	.icon {
 		text-decoration: none;
@@ -733,7 +722,7 @@
 
 		}
 
-/* Image */
+
 
 	.image {
 		border-radius: 4px;
@@ -787,7 +776,7 @@
 				width: 100%;
 			}
 
-/* List */
+
 
 	ol {
 		list-style: decimal;
@@ -956,7 +945,7 @@
 		border-top-color: #666666;
 	}
 
-/* Table */
+
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -1043,7 +1032,7 @@
 		border-color: #666666;
 	}
 
-/* Item */
+
 
 	.item {
 		padding: 3em 3em 1em 3em;
@@ -1231,7 +1220,7 @@
 
 	}
 
-/* Wrapper */
+
 
 	#wrapper {
 		width: 64em;
@@ -1269,7 +1258,7 @@
 
 		}
 
-/* Header */
+
 
 	#header {
 		background-color: #444;
@@ -1435,7 +1424,7 @@
 
 		}
 
-/* Main */
+
 
 	#main {
 		padding: 4em 4em 2em 4em;
@@ -1463,7 +1452,7 @@
 
 		}
 
-/* Intro */
+
 
 	#intro {
 		padding: 4em 4em 2em 4em;
@@ -1492,7 +1481,7 @@
 
 		}
 
-/* CTA */
+
 
 	#cta {
 		padding: 2em 0 0.1em 0;
@@ -1519,7 +1508,7 @@
 
 		}
 
-/* Footer */
+
 
 	#footer {
 		text-align: center;
@@ -1555,9 +1544,7 @@
 
 		}
 
-/* Navigation bar */
-	#nav {
-	}
+
 		#nav ul{
 			list-style-type: none;
 			margin: 0;
